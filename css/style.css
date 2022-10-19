@@ -15,7 +15,7 @@
 }
 
 .edge{
-    width: 70%;
+    width: 75%;
 }
 
 /* HEADER */
@@ -63,7 +63,7 @@ header div.menu{
 /* MAIN */
 
 main section{
-    height: 1000px;
+    height: 1500px;
     background-color: aqua;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -72,10 +72,113 @@ main section{
 }
 
 article.card{
-    height: 400px;
-    width: 30%;
-    background-color: blue;
+    height: 600px;
+    width: calc(33% - 5px);
+    background-color: lightgray;
 }
+
+
+
+/* CARD */
+
+/* general settings of card */
+article.card div.image{
+    height: 80%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+article.card div.image div.heart{
+    height: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: white;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    z-index: 1;
+}
+
+article.card div.image div.banner{
+    height: 25px;
+    width: 100%;
+    position: absolute;
+    top: 90%;
+    left: 0;
+}
+
+div.banner>div{
+    height: 100%;
+    display: inline-block;
+    color: white;
+    text-align: center;
+    line-height: 25px;
+    padding: 0 0.5rem;
+}
+
+article.card div.image div.sale{
+    background-color: red;
+}
+
+article.card div.image div.sustainability{
+    background-color: green;
+}
+
+
+/* specific settings of card */
+article.card div.card-1{
+    background-image: url(../img/1.webp);
+}
+
+article.card div.card-1:hover{
+    background-image: url(../img/1b.webp);
+}
+
+article.card div.card-2{
+    background-image: url(../img/2.webp);
+}
+
+article.card div.card-2:hover{
+    background-image: url(../img/2b.webp);
+}
+
+article.card div.card-3{
+    background-image: url(../img/3.webp);
+}
+
+article.card div.card-3:hover{
+    background-image: url(../img/3b.webp);
+}
+
+article.card div.card-4{
+    background-image: url(../img/4.webp);
+}
+
+article.card div.card-4:hover{
+    background-image: url(../img/4b.webp);
+}
+
+article.card div.card-5{
+    background-image: url(../img/5.webp);
+}
+
+article.card div.card-5:hover{
+    background-image: url(../img/5b.webp);
+}
+
+article.card div.card-6{
+    background-image: url(../img/6.webp);
+}
+
+article.card div.card-6:hover{
+    background-image: url(../img/6b.webp);
+}
+
+
 
 
 
